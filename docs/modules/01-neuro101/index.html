@@ -1,10 +1,171 @@
-<!DOCTYPE html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Module 1 — Neuroscience 101</title>
-</head><body>
-  <main style="max-width:900px;margin:0 auto;padding:24px 16px">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Module 1 — Neuroscience 101</title>
+
+  <!-- Optional: your shared CSS (safe with .nojekyll) -->
+  <link rel="stylesheet" href="/High-School-Students/assets/css/custom.css">
+
+  <style>
+    /* Page wrapper for centered layout */
+    main { max-width: 900px; margin: 0 auto; padding: 24px 16px 60px; font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; line-height: 1.55; color:#111; }
+    h1 { margin: 0 0 12px; }
+    hr { border:0; height:1px; background:#eee; margin:24px 0; }
+
+    /* Collapsible sections */
+    details.drop { margin: 12px 0; border: 1px solid #e5e7eb; border-radius: 10px; background: #f9fafb; }
+    details.drop[open] { background: #f3f4f6; }
+    details.drop > summary {
+      list-style: none; cursor: pointer; padding: 12px 14px; margin: 0;
+      font-weight: 600; color: #111827; outline: none;
+    }
+    details.drop > summary::-webkit-details-marker { display: none; }
+    details.drop > summary::before { content: "▸"; margin-right: 8px; }
+    details.drop[open] > summary::before { content: "▾"; }
+    details.drop .content { padding: 0 14px 12px 14px; }
+    details.drop > summary:hover { background:#f3f4f6; }
+
+    /* Small nested drops (e.g., vocab) */
+    details.drop-sm { margin: 8px 0; border: 1px solid #e5e7eb; border-radius: 8px; background:#fff; }
+    details.drop-sm > summary { list-style: none; cursor: pointer; padding: 8px 10px; font-weight: 600; }
+    details.drop-sm > summary::-webkit-details-marker { display: none; }
+    details.drop-sm > summary::before { content: "▸"; margin-right: 6px; }
+    details.drop-sm[open] > summary::before { content: "▾"; }
+    details.drop-sm .content { padding: 0 10px 10px 10px; }
+
+    /* Nav buttons */
+    .nav-links .btn{
+      background:#f3f4f6; border:1px solid #e5e7eb; border-radius:8px;
+      padding:10px 14px; text-decoration:none; color:#111; display:inline-block;
+      transition:background .15s, box-shadow .15s, transform .02s;
+    }
+    .nav-links .btn:hover{ background:#e5e7eb; }
+    .nav-links .btn:active{ transform:translateY(1px); }
+    .nav-links .btn:focus{ outline:2px solid #94a3b8; outline-offset:2px; }
+  </style>
+</head>
+<body>
+  <main>
     <h1>Module 1 — Neuroscience 101</h1>
-    <p>Stub page. Routing OK.</p>
-    <p><a href="/High-School-Students/">← Back to Home</a></p>
+
+    <blockquote>
+      <p>Alright — now we officially start to learn about <strong>human neuroscience</strong>. Yay!<br>
+      Let’s talk about <strong>what neuroscience is</strong>, and how we study the brain with <strong>structural MRI</strong>, <strong>fMRI</strong>, and safely <strong>nudge</strong> it with <strong>tDCS</strong> and <strong>TMS</strong>.</p>
+    </blockquote>
+
+    <hr>
+
+    <details class="drop">
+      <summary>What is “Neuroscience,” really?</summary>
+      <div class="content">
+        <p><strong>Neuroscience</strong> is the study of the nervous system — how the brain is <em>built</em> (structure) and how it <em>works</em> (function).</p>
+
+        <p><strong>In this program, you’ll use:</strong></p>
+        <ul>
+          <li><strong>Structural MRI</strong> → high-resolution pictures of anatomy (the <em>map</em>).</li>
+          <li><strong>Functional MRI (fMRI)</strong> → color overlays showing where activity increases during tasks (the <em>traffic</em>).</li>
+          <li><strong>tDCS</strong> → gentle, non-invasive currents via scalp electrodes to modulate networks.</li>
+          <li><strong>TMS</strong> → magnetic pulses that briefly activate cortex in a precise spot (“the click”).</li>
+        </ul>
+
+        <blockquote>Myth-buster: fMRI is <strong>not</strong> mind reading; it measures oxygen-level changes (BOLD) related to neural activity.</blockquote>
+      </div>
+    </details>
+
+    <details class="drop">
+      <summary>Want to know more about neuroscience? (books &amp; video)</summary>
+      <div class="content">
+        <h4>Foundational Neuroscience Textbooks</h4>
+        <ul>
+          <li><em>Principles of Neural Science</em> — Kandel, Schwartz, Jessell.</li>
+          <li><em>Neuroscience: Exploring the Brain</em> — Bear, Connors, Paradiso.</li>
+          <li><em>Fundamental Neuroscience</em> — Squire et al.</li>
+          <li><em>Neuroanatomy through Clinical Cases</em> — Blumenfeld.</li>
+        </ul>
+        <h4>Video resource</h4>
+        <p><strong>Fundamentals of Cognitive Neuroscience</strong> — Dr. Hamed Ekhtiari<br>
+        👉 <a href="https://www.youtube.com/watch?v=DSEKKfrtdd4&list=PLoYAKQ4_GWnDKeZwTjxNE2LkLyXil96mt" target="_blank" rel="noopener">LINK</a></p>
+      </div>
+    </details>
+
+    <details class="drop">
+      <summary>Why these tools together?</summary>
+      <div class="content">
+        <ul>
+          <li><strong>Maps + effects:</strong> MRI/fMRI tell you <em>where/when</em>; tDCS/TMS test <em>what happens if we nudge here</em>.</li>
+          <li><strong>Non-invasive &amp; safe:</strong> we follow screening, intensity, and duration guidelines. No surgery, no shocks.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="drop">
+      <summary>Quick look: one brain, two views (figure)</summary>
+      <div class="content">
+        <img src="/High-School-Students/assets/images/StrvsFunc.jpg" alt="Structural MRI with fMRI overlay" width="720" style="display:block; margin:16px auto; border-radius:12px;">
+        <p><em>Structural MRI = the map. fMRI = activity patterns during a task/rest.</em></p>
+      </div>
+    </details>
+
+    <details class="drop">
+      <summary>Mini-activity (10–15 min)</summary>
+      <div class="content">
+        <ol>
+          <li><strong>Spot the landmarks.</strong> Find frontal, parietal, temporal, occipital lobes on structural MRI.</li>
+          <li><strong>Read an activation map.</strong> Identify a “hot” area on a simple fMRI overlay.</li>
+          <li><strong>tDCS thought experiment.</strong> If your goal is attention, which lobe might you consider? Why?</li>
+          <li><strong>TMS target idea.</strong> Where would you place the crosshair for a motor task demo?</li>
+        </ol>
+        <blockquote>Write 3–5 sentences answering 2–4. Save them for your Module 1 deliverable.</blockquote>
+      </div>
+    </details>
+
+    <details class="drop">
+      <summary>Vocabulary (click to expand each term)</summary>
+      <div class="content">
+        <details class="drop-sm">
+          <summary>Cortex</summary>
+          <div class="content"><p>Outer folded layer of the brain where many higher functions occur.</p></div>
+        </details>
+        <details class="drop-sm">
+          <summary>Voxel</summary>
+          <div class="content"><p>A 3D pixel in MRI images (volume element).</p></div>
+        </details>
+        <details class="drop-sm">
+          <summary>BOLD signal</summary>
+          <div class="content"><p>fMRI’s oxygen-linked activity measure (Blood-Oxygen-Level Dependent).</p></div>
+        </details>
+        <details class="drop-sm">
+          <summary>Montage</summary>
+          <div class="content"><p>tDCS electrode arrangement (positions + current).</p></div>
+        </details>
+        <details class="drop-sm">
+          <summary>Target</summary>
+          <div class="content"><p>The specific cortical spot selected for TMS.</p></div>
+        </details>
+      </div>
+    </details>
+
+    <details class="drop">
+      <summary>What you’ll turn in (Module 1)</summary>
+      <div class="content">
+        <p>Create a Markdown file in your fork: <code>docs/work/module1/&lt;your-username&gt;-notes.md</code> with:</p>
+        <ul>
+          <li>3–5 sentences from the mini-activity.</li>
+          <li>One vocabulary term explained in your own words.</li>
+          <li>One question you’re curious about next.</li>
+        </ul>
+        <p>Commit on branch <code>m1-&lt;your-username&gt;</code> and open a PR titled <strong>[M1] Notes and reflection — &lt;your-username&gt;</strong>.</p>
+      </div>
+    </details>
+
+    <hr>
+
+    <div class="nav-links" style="display:flex; gap:12px; flex-wrap:wrap; margin-top:16px;">
+      <a class="btn" href="/High-School-Students/modules/02-python-basics/">→ Go to the Next Module (Module 2)</a>
+      <a class="btn" href="/High-School-Students/">🏠 Go to the Main Page</a>
+    </div>
   </main>
-</body></html>
+</body>
+</html>
