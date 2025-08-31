@@ -1,10 +1,211 @@
-<!DOCTYPE html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Module 0 — Setup</title>
-</head><body>
-  <main style="max-width:900px;margin:0 auto;padding:24px 16px">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Module 0 — Setup</title>
+
+  <!-- Optional: your shared CSS (safe even with .nojekyll) -->
+  <link rel="stylesheet" href="/High-School-Students/assets/css/custom.css">
+
+  <style>
+    /* Page wrapper for nice centered layout */
+    main { max-width: 900px; margin: 0 auto; padding: 24px 16px 60px; font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; line-height: 1.55; color:#111; }
+    h1 { margin: 0 0 12px; }
+    h3 { margin-top: 22px; }
+    hr { border:0; height:1px; background:#eee; margin:24px 0; }
+
+    /* Collapsible sections (used for everything except the story) */
+    details.drop { margin: 12px 0; border: 1px solid #e5e7eb; border-radius: 10px; background: #f9fafb; }
+    details.drop[open] { background: #f3f4f6; }
+    details.drop > summary {
+      list-style: none; cursor: pointer; padding: 12px 14px; margin: 0;
+      font-weight: 600; color: #111827; outline: none;
+    }
+    details.drop > summary::-webkit-details-marker { display: none; }
+    details.drop > summary::before { content: "▸"; margin-right: 8px; }
+    details.drop[open] > summary::before { content: "▾"; }
+    details.drop > summary:hover { background:#f3f4f6; }
+    details.drop .content { padding: 0 14px 12px 14px; }
+
+    /* Nav buttons */
+    .nav-links .btn{
+      background:#f3f4f6; border:1px solid #e5e7eb; border-radius:8px;
+      padding:10px 14px; text-decoration:none; color:#111; display:inline-block;
+      transition:background .15s, box-shadow .15s, transform .02s;
+    }
+    .nav-links .btn:hover{ background:#e5e7eb; }
+    .nav-links .btn:active{ transform:translateY(1px); }
+    .nav-links .btn:focus{ outline:2px solid #94a3b8; outline-offset:2px; }
+  </style>
+</head>
+<body>
+  <main>
     <h1>Module 0 — Setup</h1>
-    <p>If you can read this, modules are loading from the project site.</p>
-    <p><a href="/High-School-Students/">← Back to Home</a></p>
+
+    <blockquote>
+      <p>Get ready to learn using GitHub and this website. By the end, you will:</p>
+      <ul>
+        <li>Have a GitHub account set up</li>
+        <li>Know how to edit files, create a branch, and open a Pull Request (PR)</li>
+        <li>Add your own short <strong>Learner Card</strong> to the site</li>
+      </ul>
+    </blockquote>
+
+    <hr>
+
+    <!-- Story (NOT collapsible) -->
+    <h3>A Summer Story: Maps, Pulses, and “Whoa!”</h3>
+
+    <p>You push open the lab door and see a glowing 3D brain on screen—smooth folds, crisp shadows.</p>
+
+    <img src="/High-School-Students/assets/images/Fig1_Intro.jpg"
+         alt="Intro to structural MRI and fMRI"
+         width="720"
+         style="display:block; margin:16px auto; border-radius:12px;" />
+
+    <p><em>Figure 1. Structural MRI (the map) with an fMRI overlay (activity patterns). Right side, two types of noninvasive brain stimulation: Transcranial magnetic (TMS) and electrical (tES) stimulation.</em></p>
+
+    <p>“Structural MRI,” someone says. “It’s the map.” You scroll through slices like pages in a book—top to bottom, left to right—and suddenly anatomy feels navigable.</p>
+
+    <p>Next comes a color overlay: <strong>fMRI</strong>. Warm reds bloom over cortex during a simple task. “These aren’t thoughts,” your mentor smiles, “they’re oxygen changes when networks work.”</p>
+
+    <p>By week two, you’re planning <strong>tDCS</strong> like a flight path—electrode positions, currents, and safety rules—then visualizing how the electric field spreads across a head model. No sparks, no sci-fi—just careful parameters and good questions.</p>
+
+    <p>Finally: <strong>TMS</strong>. You hear the coil’s click, see a crosshair on the brain map, and watch how precise targeting works. It’s methodical and surprisingly beautiful: maps, models, and measurable effects.</p>
+
+    <p>On demo day, your team presents a clean figure that tells a tiny, true story about the brain. You came for a summer program. You leave speaking “brain maps.” 🧠✨</p>
+
+    <hr>
+
+    <!-- Collapsible sections -->
+    <details class="drop">
+      <summary>What you need</summary>
+      <div class="content">
+        <ul>
+          <li>A computer with a modern browser (Chrome/Edge/Safari)</li>
+          <li>An email address (for your GitHub account)</li>
+          <li>No installs required—we’ll use the GitHub website</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="drop">
+      <summary>Step 1 — Create (or sign in to) a GitHub account</summary>
+      <div class="content">
+        <ol>
+          <li>Go to <a href="https://github.com" target="_blank" rel="noopener">github.com</a> → <strong>Sign up</strong> (or <strong>Sign in</strong>).</li>
+          <li>Set your <strong>display name</strong> and add a friendly <strong>profile picture</strong>.</li>
+          <li>(Recommended) Turn on <strong>2-factor authentication</strong>: Settings → Password and authentication → Enable 2FA.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="drop">
+      <summary>Step 2 — Fork this course repository</summary>
+      <div class="content">
+        <ol>
+          <li>Open the course repo in your browser (the link your mentor provided).</li>
+          <li>Click <strong>Fork</strong> (top right). This makes <strong>your copy</strong> under your account.</li>
+        </ol>
+        <blockquote>You’ll do your work in your fork and submit it back via a Pull Request.</blockquote>
+      </div>
+    </details>
+
+    <details class="drop">
+      <summary>Step 3 — Add a “Learner Card” via the web editor</summary>
+      <div class="content">
+        <p>We’ll add a tiny Markdown page with your info.</p>
+        <ol>
+          <li>In <strong>your fork</strong>, open the folder: <code>docs/</code> → <code>learners/</code>.<br>
+              If <code>learners/</code> doesn’t exist, create it (Add file → <em>Create new file</em>) and name it <code>docs/learners/.keep</code> to make the folder; then add your card below.</li>
+          <li>Add a new file: <em>Add file → Create new file</em>.</li>
+          <li>Name it <strong>exactly</strong>: <code>docs/learners/&lt;your-github-username&gt;.md</code><br>
+              Example: <code>docs/learners/brainstudent123.md</code></li>
+          <li>Paste this template and fill it in:</li>
+        </ol>
+
+<pre><code>---
+title: Learner Card — &lt;Your Name&gt;
+layout: default
+---
+
+# Hi, I’m &lt;Your Name&gt; 👋
+
+- **School / Grade:** &lt;e.g., Central HS, Grade 11&gt;
+- **Why I’m here:** &lt;one or two sentences&gt;
+- **Interests:** &lt;e.g., neuroscience, coding, design, sports&gt;
+- **Fun fact:** &lt;optional&gt;
+
+_I agree to be kind, curious, and careful with data._</code></pre>
+
+        <p>At the bottom, choose <strong>Create a new branch</strong> → name it <code>module0-&lt;your-username&gt;</code> → <strong>Propose changes</strong>.</p>
+      </div>
+    </details>
+
+    <details class="drop">
+      <summary>Step 4 — Open a Pull Request (PR)</summary>
+      <div class="content">
+        <ol>
+          <li>After proposing changes, click <strong>Compare &amp; pull request</strong>.</li>
+          <li>Title your PR: <code>[M0] Add learner card for &lt;your-username&gt;</code>.</li>
+          <li>In the PR description, include a one-sentence summary and this checklist:</li>
+        </ol>
+
+<pre><code>- [ ] I created/updated my GitHub account
+- [ ] I added docs/learners/&lt;my-username&gt;.md
+- [ ] I opened a PR for Module 0</code></pre>
+
+        <p>Your mentor will review and leave comments. You’ll make edits until it’s approved and merged.</p>
+      </div>
+    </details>
+
+    <details class="drop">
+      <summary>Step 5 — Say hello (Issues)</summary>
+      <div class="content">
+        <ol>
+          <li>Go to the <strong>Issues</strong> tab (in your fork or the main course repo—follow mentor preference).</li>
+          <li>Click <strong>New issue</strong> and title it: <code>[M0] Hello from &lt;your-username&gt;</code>.</li>
+          <li>Write 1–2 sentences about what you hope to learn. Submit.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="drop">
+      <summary>(Optional) Enable Pages on your fork</summary>
+      <div class="content">
+        <ol>
+          <li>In your fork, go to <strong>Settings → Pages</strong>.</li>
+          <li><strong>Source:</strong> Deploy from a branch.</li>
+          <li><strong>Branch:</strong> <code>main</code>, <strong>Folder:</strong> <code>/docs</code> → Save.</li>
+          <li>Your site will appear at: <code>https://&lt;your-username&gt;.github.io/&lt;your-fork-name&gt;/</code></li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="drop">
+      <summary>What to turn in (Module 0) + Rubric</summary>
+      <div class="content">
+        <p><strong>Turn in:</strong></p>
+        <ul>
+          <li>A Pull Request that adds <code>docs/learners/&lt;your-username&gt;.md</code> with the template filled in.</li>
+          <li>A “Hello” Issue titled <code>[M0] Hello from &lt;your-username&gt;</code>.</li>
+        </ul>
+        <p><strong>Rubric:</strong></p>
+        <ul>
+          <li><strong>Complete (✓)</strong> — Learner card added via PR (correct path/name), simple intro filled, PR created with clear title, and hello Issue posted.</li>
+          <li><strong>Needs revision (△)</strong> — Missing file path, PR not opened, or template incomplete.</li>
+          <li><strong>Try again (✗)</strong> — No PR and no Issue.</li>
+        </ul>
+      </div>
+    </details>
+
+    <hr>
+
+    <div class="nav-links" style="display:flex; gap:12px; flex-wrap:wrap; margin-top:16px;">
+      <a class="btn" href="/High-School-Students/modules/01-neuro101/">→ Go to the Next Module (Module 1)</a>
+      <a class="btn" href="/High-School-Students/">🏠 Go to the Main Page</a>
+    </div>
   </main>
-</body></html>
+</body>
+</html>
