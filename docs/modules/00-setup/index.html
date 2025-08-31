@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Module 0 — Setup</title>
+
+  <meta name="description" content="Get ready to learn using GitHub and this site: account, fork, PR, and your Learner Card.">
+  <link rel="stylesheet" href="/High-School-Students/assets/css/custom.css" />
+</head>
+<body>
+  <main class="wrapper">
+    <h1>Module 0 — Setup</h1>
+    <p class="tagline">Let’s get your tools ready so you can learn smoothly and share your work.</p>
+
+    <!-- Quick overview cards -->
+    <div class="grid" aria-label="Setup overview">
+      <div class="card">
+        <span class="kicker">Step A</span>
+        <h3>Create GitHub</h3>
+        <p>Make an account and enable 2FA for security.</p>
+      </div>
+      <div class="card">
+        <span class="kicker">Step B</span>
+        <h3>Fork the course</h3>
+        <p>You’ll work in your own copy and submit changes via PR.</p>
+      </div>
+      <div class="card">
+        <span class="kicker">Step C</span>
+        <h3>Learner Card</h3>
+        <p>Add a short intro page under <code>docs/learners/</code>.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Story (not collapsible) -->
+    <section class="card" style="padding:18px;">
+      <h3 style="margin-top:0;">A Summer Story: Maps, Pulses, and “Whoa!”</h3>
+      <p>You push open the lab door and see a glowing 3D brain on screen—smooth folds, crisp shadows.</p>
+      <div class="hero-figure" style="margin-top:10px;">
+        <img src="/High-School-Students/assets/images/Fig1_Intro.jpg"
+             alt="Structural MRI with fMRI overlay and tES/TMS concept"
+             loading="lazy">
+      </div>
+      <p><em>Figure 1. Structural MRI (the map) with an fMRI overlay (activity patterns). Right side, two types of noninvasive brain stimulation: Transcranial magnetic (TMS) and electrical (tES) stimulation.</em></p>
+      <p>“Structural MRI,” someone says. “It’s the map.” You scroll through slices like pages in a book—top to bottom, left to right—and suddenly anatomy feels navigable.</p>
+      <p>Next comes a color overlay: <strong>fMRI</strong>. Warm reds bloom over cortex during a simple task. “These aren’t thoughts,” your mentor smiles, “they’re oxygen changes when networks work.”</p>
+      <p>By week two, you’re planning <strong>tDCS</strong> like a flight path—electrode positions, currents, and safety rules—then visualizing how the electric field spreads across a head model. No sparks, no sci-fi—just careful parameters and good questions.</p>
+      <p>Finally: <strong>TMS</strong>. You hear the coil’s click, see a crosshair on the brain map, and watch how precise targeting works. It’s methodical and surprisingly beautiful: maps, models, and measurable effects.</p>
+      <p>On demo day, your team presents a clean figure that tells a tiny, true story about the brain. You came for a summer program. You leave speaking “brain maps.” 🧠✨</p>
+    </section>
+
+    <!-- Collapsible steps -->
+    <details class="drop">
+      <summary>What you need</summary>
+      <div class="content">
+        <ul>
+          <li>A computer with a modern browser (Chrome/Edge/Safari)</li>
+          <li>An email address (for your GitHub account)</li>
+          <li>No installs required—we’ll use the GitHub website</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="drop">
+      <summary>Step 1 — Create (or sign in to) a GitHub account</summary>
+      <div class="content">
+        <ol>
+          <li>Go to <a href="https://github.com" target="_blank" rel="noopener">github.com</a> → <strong>Sign up</strong> (or <strong>Sign in</strong>).</li>
+          <li>Set your <strong>display name</strong> and add a friendly <strong>profile picture</strong>.</li>
+          <li>(Recommended) Turn on <strong>2-factor authentication</strong>: Settings → Password and authentication → Enable 2FA.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="drop">
+      <summary>Step 2 — Fork this course repository</summary>
+      <div class="content">
+        <ol>
+          <li>Open the course repo in your browser (the link your mentor provided).</li>
+          <li>Click <strong>Fork</strong> (top right). This makes <strong>your copy</strong> under your account.</li>
+        </ol>
+        <blockquote>You’ll do your work in your fork and submit it back via a Pull Request.</blockquote>
+      </div>
+    </details>
+
+    <details class="drop">
+      <summary>Step 3 — Add a “Learner Card” via the web editor</summary>
+      <div class="content">
+        <p>We’ll add a tiny Markdown page with your info.</p>
+        <ol>
+          <li>In <strong>your fork</strong>, open: <code>docs/</code> → <code>learners/</code> (create it if missing).</li>
+          <li>Add a new file: <em>Add file → Create new file</em>.</li>
+          <li>Name it <strong>exactly</strong>: <code>docs/learners/&lt;your-github-username&gt;.md</code><br>Example: <code>docs/learners/brainstudent123.md</code></li>
+          <li>Paste and fill this template:</li>
+        </ol>
+<pre><code>---
+title: Learner Card — &lt;Your Name&gt;
+layout: default
+---
+
+# Hi, I’m &lt;Your Name&gt; 👋
+
+- **School / Grade:** &lt;e.g., Central HS, Grade 11&gt;
+- **Why I’m here:** &lt;one or two sentences&gt;
+- **Interests:** &lt;e.g., neuroscience, coding, design, sports&gt;
+- **Fun fact:** &lt;optional&gt;
+
+_I agree to be kind, curious, and careful with data._</code></pre>
+        <p>At the bottom, choose <strong>Create a new branch</strong> → name it <code>module0-&lt;your-username&gt;</code> → <strong>Propose changes</strong>.</p>
+      </div>
+    </details>
+
+    <details class="drop">
+      <summary>Step 4 — Open a Pull Request (PR)</summary>
+      <div class="content">
+        <ol>
+          <li>After proposing changes, click <strong>Compare &amp; pull request</strong>.</li>
+          <li>Title your PR: <code>[M0] Add learner card for &lt;your-username&gt;</code>.</li>
+          <li>In the PR description, include a one-sentence summary and this checklist:</li>
+        </ol>
+<pre><code>- [ ] I created/updated my GitHub account
+- [ ] I added docs/learners/&lt;my-username&gt;.md
+- [ ] I opened a PR for Module 0</code></pre>
+        <p>Your mentor will review and leave comments. You’ll make edits until it’s approved and merged.</p>
+      </div>
+    </details>
+
+    <details class="drop">
+      <summary>Step 5 — Say hello (Issues)</summary>
+      <div class="content">
+        <ol>
+          <li>Go to the <strong>Issues</strong> tab (in your fork or the main course repo—follow mentor preference).</li>
+          <li>Click <strong>New issue</strong> and title it: <code>[M0] Hello from &lt;your-username&gt;</code>.</li>
+          <li>Write 1–2 sentences about what you hope to learn. Submit.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="drop">
+      <summary>(Optional) Enable Pages on your fork</summary>
+      <div class="content">
+        <ol>
+          <li>In your fork, go to <strong>Settings → Pages</strong>.</li>
+          <li><strong>Source:</strong> Deploy from a branch.</li>
+          <li><strong>Branch:</strong> <code>main</code>, <strong>Folder:</strong> <code>/docs</code> → Save.</li>
+          <li>Your site: <code>https://&lt;your-username&gt;.github.io/&lt;your-fork-name&gt;/</code></li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="drop">
+      <summary>What to turn in (Module 0) + Rubric</summary>
+      <div class="content">
+        <p><strong>Turn in:</strong></p>
+        <ul>
+          <li>A Pull Request that adds <code>docs/learners/&lt;your-username&gt;.md</code> with the template filled in.</li>
+          <li>A “Hello” Issue titled <code>[M0] Hello from &lt;your-username&gt;</code>.</li>
+        </ul>
+        <p><strong>Rubric:</strong></p>
+        <ul>
+          <li><strong>Complete (✓)</strong> — Learner card via PR (correct path/name), intro filled, PR opened, and hello Issue posted.</li>
+          <li><strong>Needs revision (△)</strong> — Missing path/PR, or template incomplete.</li>
+          <li><strong>Try again (✗)</strong> — No PR and no Issue.</li>
+        </ul>
+      </div>
+    </details>
+
+    <hr>
+    <p class="center">
+      <a class="btn" href="/High-School-Students/">🏠 Main Page</a>
+      <a class="btn" href="/High-School-Students/modules/01-neuro101/">→ Next: Module 1</a>
+    </p>
+  </main>
+</body>
+</html>
