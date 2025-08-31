@@ -1,0 +1,7 @@
+title: High-School Human Neuroscience Club
+description: A guided, step-by-step summer program to learn structural MRI, fMRI, and non-invasive neuromodulation (tDCS/TMS) — no prior coding required.
+url: "https://soleimanighazaleh.github.io"   # no trailing slash
+baseurl: "/High-School-Program"              # leading slash
+theme: jekyll-theme-cayman                   # or the theme you were using
+plugins:
+  - jekyll-seo-tag

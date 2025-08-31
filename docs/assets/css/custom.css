@@ -1,0 +1,15 @@
+---
+---
+
+/* Collapsible sections */
+details.drop { margin: 12px 0; border: 1px solid #e5e7eb; border-radius: 10px; background: #f9fafb; }
+details.drop[open] { background: #f3f4f6; }
+details.drop > summary {
+  list-style: none; cursor: pointer; padding: 12px 14px; margin: 0;
+  font-weight: 600; color: #111827; outline: none;
+}
+details.drop > summary::-webkit-details-marker { display: none; }
+details.drop > summary::before { content: "▸"; margin-right: 8px; }
+details.drop[open] > summary::before { content: "▾"; }
+details.drop > summary:hover { background:#f3f4f6; }
+details.drop .content { padding: 0 14px 12px 14px; }
